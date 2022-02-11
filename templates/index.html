@@ -9,39 +9,44 @@
 </head>
 <body>
     <div class="container text-center">
-    <p>Ninja Gold</p>
-    
+    <h1>Ninja Gold</h1>
+    <br>
+    <h3>Your current gold count: {{session['gold']}}</h3>
+    <br>
+    <a href="/reset" class="btn btn-danger">Reset</a>
+    <br>
     <div class="d-flex justify-content-around">
         <form action="/submit" method="POST" class="form">
             <label for="findGold">Farm</label>
             <br>
             <input type="hidden" name ="findGold" value="farm" class="form-control">
             <br>
-            <button class="btn btn-warning">Find some gold!!</button>
-            <br>
-            <br>
-            <p>do this action</p>
+            <button class="btn btn-warning">Gain 10-20 gold</button>
         </form>
         <form action="/submit" method="POST" class="form">
             <label for="findGold">Cave</label>
             <br>
             <input type="hidden" name ="findGold"  value="cave" class="form-control">
-            <button class="btn btn-warning">Find some gold!!</button>
+            <br>
+            <button class="btn btn-warning">Gain 5-10 gold</button>
         </form>
         <form action="/submit" method="POST" class="form">
             <label for="findGold">House</label>
             <br>
             <input type="hidden" name ="findGold"  value="house" class="form-control">
-            <button class="btn btn-warning">Find some gold!!</button>
+            <br>
+            <button class="btn btn-warning">Gain 2-5 gold</button>
         </form>
         <form action="/submit" method="POST" class="form">
-            <label for="findGold">casino</label>
+            <label for="findGold">Casino</label>
             <br>
             <input type="hidden" name ="findGold"  value="casino" class="form-control">
-            <button class="btn btn-warning">Find some gold!!</button>
+            <br>
+            <button class="btn btn-warning">Win or lose 0-50 gold</button>
         </form>
     </div>
-
+    <br>
+    <h2>{{message | safe}}</h2>
     </div>
 </body>
 </html>
