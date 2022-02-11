@@ -10,11 +10,37 @@
 <body>
     <div class="container text-center">
     <p>Ninja Gold</p>
+    
+    <div class="d-flex justify-content-around">
         <form action="/submit" method="POST" class="form">
-            <label for="PLACEHOLDER">Input 1</label>
-            <input type="text" name ="number" class="form-control">
-            <button class="btn btn-warning">Submit</button>
+            <label for="findGold">Farm</label>
+            <br>
+            <input type="hidden" name ="findGold" value="farm" class="form-control">
+            <br>
+            <button class="btn btn-warning">Find some gold!!</button>
+            <br>
+            <br>
+            <p>do this action</p>
         </form>
+        <form action="/submit" method="POST" class="form">
+            <label for="findGold">Cave</label>
+            <br>
+            <input type="hidden" name ="findGold"  value="cave" class="form-control">
+            <button class="btn btn-warning">Find some gold!!</button>
+        </form>
+        <form action="/submit" method="POST" class="form">
+            <label for="findGold">House</label>
+            <br>
+            <input type="hidden" name ="findGold"  value="house" class="form-control">
+            <button class="btn btn-warning">Find some gold!!</button>
+        </form>
+        <form action="/submit" method="POST" class="form">
+            <label for="findGold">casino</label>
+            <br>
+            <input type="hidden" name ="findGold"  value="casino" class="form-control">
+            <button class="btn btn-warning">Find some gold!!</button>
+        </form>
+    </div>
 
     </div>
 </body>

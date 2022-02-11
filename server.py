@@ -8,6 +8,10 @@ app.secret_key = 'super, super secret key name'
 def home():
     return render_template("index.html")
 
+@app.route('/submit' , methods=['POST'])
+def render():
+    return redirect("/")
+
 @app.route('/reset')
 def reset():
     session.clear()
