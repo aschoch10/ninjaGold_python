@@ -13,6 +13,5 @@ def reset():
     session.clear()
     return redirect('/')
 
-
 if __name__ == "__main__":
     app.run(debug=True)
